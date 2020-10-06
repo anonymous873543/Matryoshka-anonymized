@@ -22,16 +22,16 @@ object Util {
       .set("spark.serializer", "org.apache.spark.serializer.KryoSerializer")
     if (local) {
       conf.setMaster("local[10]")
-      conf.set("spark.local.dir", "TODO")
+      conf.set("spark.local.dir", "TOBEFILLED")
     }
     conf.set("spark.cleaner.referenceTracking.cleanCheckpoints", "true")
     conf.registerKryoClasses(Array(classOf[DenseVector]))
     implicit val sc: SparkContext = new SparkContext(conf)
 
     if (local)
-      sc.setCheckpointDir("TODO")
+      sc.setCheckpointDir("TOBEFILLED")
     else
-      sc.setCheckpointDir("hdfs://TODO")
+      sc.setCheckpointDir("hdfs://TOBEFILLED")
 
     println("=== sc.defaultParallelism: " + sc.defaultParallelism)
 
