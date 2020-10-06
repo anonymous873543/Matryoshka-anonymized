@@ -4,6 +4,8 @@
 
 This repository contains the material to run the experiments for the Matryoshka paper.
 
+Build with `mvn clean package -DskipTests`
+
 You will need a cluster with
 * Spark 3.1.0
 * Java 14
