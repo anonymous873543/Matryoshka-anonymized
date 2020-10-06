@@ -15,3 +15,5 @@ You will need a cluster with
 The `scripts` directory contains Bash scripts to run the experiments.
 
 You should grep for the string `TOBEFILLED` to fill in machine names, directories, etc. (both in scripts and the Scala sources)
+
+The DIQL experiment is in `DIQL/tests/spark/BounceRateDIQL.scala`. (DIQL is not included in the top-level pom.xml. Please refer to DIQL's own documentation on how to build DIQL.)
